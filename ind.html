@@ -4,58 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD131-Dynamic Web Fundamentals-Thembinkosi Gumbo</title>
-    <meta name="description" content="WDD131-Dynamic Web Fundamentals-Thembinkosi Gumbo. My home page">
+    <title>WDD131-Dynamic Web Fundamentals - Thembinkosi Gumbo</title>
+    <meta name="description" content="WDD131-Dynamic Web Fundamentals - Thembinkosi Gumbo. My home page">
     <meta name="author" content="Thembinkosi Gumbo">
-    <link rel="stylesheet" href="styles/base.css">
+    <!-- Corrected CSS file name -->
+    <link rel="stylesheet" href="styles/bas.css">
     <script src="scripts/getdates.js"></script>
 </head>
 
 <body>
     <header>
-        <span id="course title">WDD131 - Dynamic Web Fundamentals</span>
+        <!-- Fixed id name (no spaces) -->
+        <span id="course-title">WDD131 - Dynamic Web Fundamentals</span>
         <nav>
-            <a href="https://www.linkedin.com/in/thembinkosi-g-5478a8188">linkedin</a>
+            <a href="https://www.linkedin.com/in/thembinkosi-g-5478a8188">LinkedIn</a>
             <a href="https://byupw.instructure.com">Canvas</a>
             <a href="https://www.churchofjesuschrist.org/study.scripture/bomf/1-ne/3?lang=eng&id=p7#p7">Scripture</a>
             <a href="#">Final Projects</a>
         </nav>
     </header>
+
     <main>
         <h1>Thembinkosi Gumbo</h1>
+
+        <!-- About Section -->
         <section class="card about">
             <h2>About Me</h2>
             <img src="images/themba.jpg" alt="Photo of Thembinkosi Gumbo" class="float-right">
-            <P>Hello!, My name is Thembinkosi Gumbo from Zimbabwe currently in Cape Town South Africa. Iam studying web
-                development online through BYU PATHWAY
-                and i am enjoying it. I enjoy watching action, comedy movies on my free time and i like indoors but also
-                spend much of my time at work.</P>
+            <p>Hello! My name is Thembinkosi Gumbo from Zimbabwe, currently in Cape Town, South Africa. I am studying
+                web
+                development online through BYU Pathway and I am enjoying it. I enjoy watching action and comedy movies
+                in my free
+                time. I like indoors but also spend much of my time at work.</p>
 
             <h3>Cape Town, South Africa</h3>
             <img src="images/table-mountain.jpg" alt="Table Mountain in Cape Town" class="float-right">
-            <p>Cape Town is well known for it's famous Table Mountain and it's majestic view and diverse culture. It is
-                one of the popular tourist destinations in Africa</p>
+            <p>Cape Town is well known for its famous Table Mountain, majestic views, and diverse culture. It is one of
+                the
+                popular tourist destinations in Africa.</p>
         </section>
+
+        <!-- Resources Section -->
         <section class="card resources">
             <h2>Web Dev Resources</h2>
             <ul>
                 <li><a href="https://dev.to">Dev.to Community</a></li>
-                <li><a href="https://www.smashingmagazinecom">Smashing Magazine</a></li>
+                <li><a href="https://www.smashingmagazine.com">Smashing Magazine</a></li>
                 <li><a href="https://css-tricks.com">CSS Tricks</a></li>
-                <li><a href="https://www.W3Schools.com">W3 Schools</a></li>
+                <li><a href="https://www.w3schools.com">W3 Schools</a></li>
                 <li><a href="https://www.udemy.com">Udemy</a></li>
                 <li><a href="https://placeholder.com">Image Placeholder</a></li>
             </ul>
         </section>
     </main>
+
+    <!-- Footer -->
     <footer>
-        <p>© <span id="currentyear"></span> | Thembinkosi Gumbo| South Africa</p>
+        <p>© <span id="currentyear"></span> | Thembinkosi Gumbo | South Africa</p>
         <p id="lastModified"></p>
     </footer>
+
+    <!-- Script placed at the end for proper execution -->
     <script>
         const currentYear = new Date().getFullYear();
         document.getElementById("currentyear").textContent = currentYear;
-        document.getElementById("lastModified").innerHTML = document.lastModified
+        document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
     </script>
 </body>
 
