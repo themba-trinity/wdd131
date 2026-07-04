@@ -81,7 +81,7 @@ h1 {
 }
 
 .about {
-    background-color: #f1f1f1;
+    background-color: #fff;
     padding: 1rem;
     border-radius: 8px;
 }
@@ -113,6 +113,7 @@ h1 {
 .resources {
     /* position: relative;
     float: right; */
+    background-color: #fff;
     border: 1px solid #ccc;
     padding: 1rem;
     border-radius: 8px
@@ -123,7 +124,7 @@ h1 {
     color: white;
     font-family: var(--heading-font);
     text-align: center;
-    padding: 0.5rem;
+    padding: .75rem;
     border-radius: 6px 6px 0 0;
 }
 
