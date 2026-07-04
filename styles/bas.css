@@ -60,6 +60,7 @@ nav a:hover {
 
 /* Main Layout */
 main {
+    position: grid;
     max-width: 1000px;
     margin: 2rem auto;
     padding: 0 1rem;
@@ -113,6 +114,7 @@ h1 {
 /* Resources Section */
 .resources {
     position: relative;
+    display: flex;
     background-color: #f1f1f1;
     padding: 1rem;
     border-radius: 8px;

@@ -6,6 +6,7 @@
     --heading-font: "Merriweather", serif;
     --body-font: sans-serif;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -18,6 +19,7 @@ body {
     line-height: 1.5;
     background-color: #fff;
 }
+
 header {
     display: block;
     background-color: var(--primary-color);
@@ -53,6 +55,7 @@ nav a:hover {
     background-color: var(--secondary-color);
     color: white;
 }
+
 main {
     max-width: 1000px;
     margin: 2rem auto;
@@ -60,6 +63,12 @@ main {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 1.5rem;
+}
+
+main h1 {
+    grid-column: 1 / 3;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 h1 {
@@ -82,7 +91,7 @@ h1 {
     color: white;
     font-family: var(--heading-font);
     text-align: center;
-    padding: 0.5rem;
+    padding: .75rem;
     border-radius: 6px 6px 0 0;
 }
 
@@ -102,11 +111,11 @@ h1 {
 }
 
 .resources {
-    position: relative;
-    display: grid;
-    background-color: #f1f1f1;
+    /* position: relative;
+    float: right; */
+    border: 1px solid #ccc;
     padding: 1rem;
-    border-radius: 8px;
+    border-radius: 8px
 }
 
 .resources h2 {
@@ -119,9 +128,7 @@ h1 {
 }
 
 .resources ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 1rem;
+    padding: 2rem
 }
 
 .resources li {

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang=class="str">"en">
+
+<head>
+    <meta charset=class="str">"UTF-class="num">8">
+    <meta name=class="str">"viewport" content=class="str">"width=device-width, initial-scale=class="num">1.0">
+    <title>WDD131-Dynamic Web Fundamentals - Thembinkosi Gumbo</title>
+    <meta name=class="str">"description" content=class="str">"WDD131-Dynamic Web Fundamentals - Thembinkosi Gumbo. My
+    home page">
+    <meta name=class="str">"author" content=class="str">"Thembinkosi Gumbo">
+    <!-- Corrected CSS file name -->
+    <link rel=class="str">"stylesheet" href=class="str">"styles/bas.css">
+    <link rel=class="str">"stylesheet" href=class="str">"scripts/getdates.js">
+</head>
+
+<body>
+    <header>
+        <!-- Fixed id name(no spaces) -->
+        <span id=class="str">"course-title">WDD131 - Dynamic Web Fundamentals</span>
+        <nav>
+            <a
+                href=class="str">"https:class="cmtclass="str">">//www.linkedin.com/in/thembinkosi-g-5478a8188">LinkedIn</a>
+            <a href=class="str">"https:class="cmtclass="str">">//byupw.instructure.com">Canvas</a>
+            <a
+                href=class="str">"https:class="cmtclass="str">">//www.churchofjesuschrist.org/study.scripture/bomf/class="num">1-ne/class="num">3?lang=eng&id=p7#p7">Scripture</a>
+            <a href=class="str">"class="cmtclass="str">">#">Final Projects</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Resources Section -->
+        <section class=class="str">"card resources">
+            <h2>Web Dev Resources</h2>
+            <div class=class="str">"card resources">
+                <ul>
+                    <li><a href=class="str">"https:class="cmtclass="str">">//dev.to">Dev.to Community</a></li>
+                    <li><a href=class="str">"https:class="cmtclass="str">">//www.smashingmagazine.com">Smashing
+                            Magazine</a></li>
+                    <li><a href=class="str">"https:class="cmtclass="str">">//css-tricks.com">CSS Tricks</a></li>
+                    <li><a href=class="str">"https:class="cmtclass="str">">//www.w3schools.com">W3 Schools</a></li>
+                    <li><a href=class="str">"https:class="cmtclass="str">">//www.udemy.com">Udemy</a></li>
+                    <li><a href=class="str">"https:class="cmtclass="str">">//placeholder.com">Image Placeholder</a></li>
+                </ul>
+            </div>
+        </section>
+        <div>
+            <h1>Thembinkosi Gumbo</h1>
+        </div>
+
+        <!-- About Section -->
+        <section class=class="str">"card about">
+            <h2>About Me</h2>
+            <img src=class="str">"images/themba.jpg" alt=class="str">"Photo of Thembinkosi Gumbo"
+            class=class="str">"float-right">
+            <p>Hello! My name is Thembinkosi Gumbo from Zimbabwe, currently in Cape Town, South Africa. I am studying
+                web
+                development online through BYU Pathway and I am enjoying it. I enjoy watching action and comedy movies
+                in my free
+                time. I like indoors but also spend much of my time at work.</p>
+
+            <h3>Cape Town, South Africa</h3>
+            <img src=class="str">"images/table-mountain.jpg" alt=class="str">"Table Mountain in Cape Town"
+            class=class="str">"float-right">
+            <p>Cape Town is well known for its famous Table Mountain, majestic views, and diverse culture. It is one of
+                the
+                popular tourist destinations in Africa.</p>
+        </section>
+
+        <!-- New section for displaying class="str">"Web Dev" next to class="str">"About Me" content -->
+        <section class=class="str">"card web-dev">
+            <h2>Web Development</h2>
+            <p>My journey into web development has been both exciting and rewarding. As a student of BYU Pathway, I have
+                gained a strong foundation in HTML, CSS, JavaScript, and more. I am constantly learning and eager to
+                apply
+                my knowledge to real-world projects. Let's explore some of my favorite resources and tools that help me
+                in
+                my development process!</p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© <span id=class="str">"currentyear"></span> | Thembinkosi Gumbo | South Africa</p>
+        <p id=class="str">"lastModified"></p>
+    </footer>
+
+    <!-- Script placed at the end for proper execution -->
+    <script>
+        const currentYear = new Date().getFullYear();
+        document.getElementById(class= "str" > "currentyear").textContent = currentYear;
+        document.getElementById(class= "str" > "lastModified").textContent = class= "str" > "Last Modified: " + document.lastModified;
+    </script>
+</body>
+
+</html>
