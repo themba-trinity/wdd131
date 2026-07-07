@@ -1,5 +1,5 @@
 const radiusOutPut = document.getElementById("radius");
-const areaOutPut = document.querySelector("area");
+const areaOutPut = document.querySelector("#area");
 
 let area = 0;
 const PI = 3.14139;
