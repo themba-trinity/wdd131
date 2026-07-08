@@ -88,7 +88,7 @@ h1 {
 }
 
 .temple-grid {
-    display: grid;
+    display: block;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
     margin-top: 2rem;
