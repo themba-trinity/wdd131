@@ -1,0 +1,24 @@
+#hamburger {
+    display: none;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav a {
+    border-top: none;
+    flex: auto;
+}
+
+.temple-grid { 
+    grid-template-rows: 1fr;
+    gap: .75rem;
+}
+
+figure {
+    display: grid;
+    padding: 1rem;
+}
