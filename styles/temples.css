@@ -41,6 +41,9 @@ header {
 
 nav {
     background-color: var(--primary-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 nav ul {
@@ -59,7 +62,8 @@ nav a {
     text-decoration: none;
     padding: 1rem;
     text-align: center;
-    border-top: #fff
+    flex: auto;
+    border-top: none;
 }
 
 nav a:hover {
@@ -68,7 +72,7 @@ nav a:hover {
 }
 
 #hamburger {
-    display: block;
+    display: none;
     font-size: 2rem;
     color: white;
     cursor: pointer;
@@ -100,11 +104,12 @@ h1 {
 .temple-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
+    gap: .75rem;
     margin-top: 2rem;
 }
 
 figure {
+    display: grid;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 8px;
