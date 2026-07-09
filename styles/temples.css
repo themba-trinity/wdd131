@@ -45,6 +45,12 @@ nav {
     background-color: var(--primary-color);
 }
 
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
 nav.show {
     display: flex;
 }
