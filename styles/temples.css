@@ -40,8 +40,6 @@ header {
 }
 
 nav {
-    display: none;
-    flex-direction: column;
     background-color: var(--primary-color);
 }
 
@@ -61,7 +59,7 @@ nav a {
     text-decoration: none;
     padding: 1rem;
     text-align: center;
-    border-top: 1px solid rgb(255, 255, 255);
+    border-top: #fff
 }
 
 nav a:hover {
@@ -88,7 +86,6 @@ nav a:hover {
 
 main {
     max-width: 800px;
-    margin: 0 auto;
     color: var(--primary-color);
     margin: 1rem;
 }
