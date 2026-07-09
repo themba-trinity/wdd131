@@ -13,7 +13,8 @@ nav a {
     flex: auto;
 }
 
-.temple-grid { 
+.temple-grid {
+
     grid-template-rows: 1fr;
     gap: .75rem;
 }
