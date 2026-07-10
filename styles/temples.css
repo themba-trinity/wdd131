@@ -65,8 +65,9 @@ nav a {
 }
 
 nav a:hover {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+    text-decoration: underline double;
+    background-color: #eee;
+    color: #000;
 }
 
 #hamburger {
@@ -88,9 +89,9 @@ nav a:hover {
 }
 
 main {
-    max-width: 600px;
+    max-width: 800px;
     padding: 1rem;
-    margin: auto;
+    margin: 0 auto;
 }
 
 h1 {
