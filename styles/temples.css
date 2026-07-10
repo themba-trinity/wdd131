@@ -61,7 +61,7 @@ nav a {
     padding: 1rem;
     text-align: center;
 
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    /*border-top: 1px solid rgba(255, 255, 255, 0.2);*/
 }
 
 nav a:hover {
@@ -102,7 +102,7 @@ h1 {
 }
 
 .temple-grid {
-    display: grid;
+    /*display: grid;*/
     grid-template-columns: 1fr 1fr 1fr;
     /*gap: 1rem;*/
     margin-top: 2rem;
