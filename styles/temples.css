@@ -21,7 +21,7 @@ body {
 
 .container {
     max-width: 800px;
-    margin: 0 auto;
+    margin: auto;
     padding: 0 1rem;
 }
 
@@ -41,9 +41,8 @@ header {
 
 nav {
     background-color: var(--primary-color);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    display: none;
 }
 
 nav ul {
@@ -57,13 +56,12 @@ nav.show {
 }
 
 nav a {
-    display: block;
     color: white;
     text-decoration: none;
     padding: 1rem;
     text-align: center;
-    flex: auto;
-    border-top: none;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 nav a:hover {
@@ -72,9 +70,10 @@ nav a:hover {
 }
 
 #hamburger {
-    display: none;
+    display: block;
     font-size: 2rem;
     color: white;
+    border: none;
     cursor: pointer;
     position: absolute;
     top: 0.5rem;
@@ -89,9 +88,9 @@ nav a:hover {
 }
 
 main {
-    max-width: 800px;
-    color: var(--primary-color);
-    margin: 1rem;
+    max-width: 600px;
+    padding: 1rem;
+    margin: auto;
 }
 
 h1 {
@@ -104,12 +103,11 @@ h1 {
 .temple-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: .75rem;
+    gap: 1rem;
     margin-top: 2rem;
 }
 
 figure {
-    display: grid;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 8px;

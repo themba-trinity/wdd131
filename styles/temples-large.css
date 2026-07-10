@@ -10,12 +10,12 @@ nav {
 
 nav a {
     border-top: none;
-    flex: auto;
+    flex: 1;
 }
 
 .temple-grid {
-
-    grid-template-rows: 1fr;
+display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: .75rem;
 }
 
