@@ -14,7 +14,7 @@ nav a {
 }
 
 .temple-grid {
-display: grid;
+    display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     gap: .75rem;
 }
