@@ -100,6 +100,7 @@ nav a:hover {
 }
 
 main {
+    display: block;
     max-width: 800px;
     padding: 1rem;
     margin: 0 auto;
@@ -113,7 +114,7 @@ h1 {
 }
 
 .temple-grid {
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr 1fr;
     /*gap: 1rem;*/
     margin-top: 2rem;
