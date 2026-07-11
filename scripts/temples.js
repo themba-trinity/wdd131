@@ -6,7 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
 const hamburgerBtn = document.querySelector("#hamburger");
 const navMenu = document.querySelector("navMenu");
 hamburgerBtn.addEventListener("click", () => {
-    navMenu.classList.toggle("show")
+    navMenu.classList.toggle("show");
+    hamburger.classList.toggle("active");
 });
 });
 if (navMenu.classList.contains("show")) {
