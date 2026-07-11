@@ -1,12 +1,10 @@
 const currentYear = new Date().getFullYear();
 document.getElementById("currentyear").textContent = currentYear;
-
 document.getElementById("lastModified").innerHTML = document.lastModified;
 
 document.addEventListener("DOMContentLoaded", () => { 
 const hamburgerBtn = document.querySelector("#hamburger");
 const navMenu = document.querySelector("navMenu");
-
 hamburgerBtn.addEventListener("click", () => {
     navMenu.classList.toggle("show")
 });
