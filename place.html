@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Information web page about South Africa">
+    <meta name="Author" content="Thembinkosi Gumbo">
+    <title>South Africa | WDD131</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>South Africa</h1>
+    </header>
+    <main>
+        <section class="hero">
+            <picture>
+                <source src="images/south-africa-flag.webp" media="(min-width: 800px)">
+                <img src="images/south-african-flag.webp" alt="South African Flag" loading="lazy">
+            </picture>
+
+            <div class="data card">
+                <h2>Data</h2>
+                <ul>
+                    <li><span>Area</span> 1,221,037 sq km</li>
+                    <li><span>Population</span> 65.5 million people</li>
+                    <li><span>Capital</span> Pretoria</li>
+                    <li><span>Languages</span> 12 Official languages</li>
+                    <li><span>Currency</span> South African Rand</li>
+                    <li><span>Time Zone</span> UTC+2</li>
+                    <li><span>Calling Code</span> +27</li>
+                    <li><span>Internet TLD</span> .za</li>
+                </ul>
+            </div>
+            <div class="weather card">
+                <h2>Weather <img src="images/weather-icon.svg" alt="Weather Icon" class="weather-icon"></h2>
+
+                <ul>
+                    <li><span>Temperature:</span> <span id="temp">13</span>celsius</li>
+                    <li> <span>Conditions:</span> Partly Cloud</li>
+                    <li> <span>Wind:</span> <span id="wind">3</span>km/h</li>
+                    <li><span>Wind Chill:</span> <span id="windchill"></span></li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>©2026 <span id="currentyear"></span> Thembinkosi Gumbo | South Africa</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
