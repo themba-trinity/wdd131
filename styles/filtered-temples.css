@@ -27,7 +27,7 @@ header h1 {
 }
 
 
-#menuButton {
+/*#menuButton {
     background: none;
     border: none;
     color: #fff;
@@ -35,7 +35,7 @@ header h1 {
     cursor: pointer;
     display: none;
 
-}
+}*/
 
 #navigation {
     display: flex;
