@@ -5,18 +5,12 @@ document.getElementById("lastModified").innerHTML = document.lastModified;
 document.addEventListener("DOMContentLoaded", () => {
     const hamburgerBtn = document.querySelector("#menuButton");
     const navMenu = document.querySelector("#navigation");
+
     hamburgerBtn.addEventListener("click", () => {
         navMenu.classList.toggle("show");
         hamburgerBtn.classList.toggle("active");
-
-        if (navMenu.classList.contains("show")) {
-            hamburgerBtn.textContent = "x";
-        } else {
-            hamburgerBtn.textContent = "";
-        }
     });
 });
-
 const temples = [
     {
         templeName: "Aba Nigeria",
@@ -97,15 +91,17 @@ const temples = [
     }
 ];
 
-createTempleCard();
-function displayTemples() {
-    temples.forEach(temple => {
-        let card = document.createElement("section");
-        let name = document.createElement("h3");
-        let location = document.createElement("p")
-        let dedication = document.createElement("p");
-        let area = document.createElement("p");
-        let img = document.createElement("img");
+function displayTemples(templeList) {
+    const grid = document.querySelector(".temple-grid");
+    grid.innerHTML = ""; // Clear previous cards
+
+    templeList.forEach(temple => {
+        const card = document.createElement("section");
+        const name = document.createElement("h3");
+        const location = document.createElement("p");
+        const dedication = document.createElement("p");
+        const area = document.createElement("p");
+        const img = document.createElement("img");
 
         name.textContent = temple.templeName;
         location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
@@ -113,17 +109,22 @@ function displayTemples() {
         area.innerHTML = `<span class="label">Size:</span> ${temple.area}`;
         img.setAttribute("src", temple.imageUrl);
         img.setAttribute("alt", `${temple.templeName} temple`);
-        img.setAttribute("loading", "lazy")
+        img.setAttribute("loading", "lazy");
 
         card.appendChild(name);
-        card.append(location);
-        card.append(dedication);
-        card.append(area);
-        card.append(img);
+        card.appendChild(location);
+        card.appendChild(dedication);
+        card.appendChild(area);
+        card.appendChild(img);
 
-        document.querySelector(".temple-grid").appendChild(card);
+        grid.appendChild(card);
+
     });
 }
+
+
+
+
 
 function filterOld() {
     displayTemples(temples.filter(temple => {
@@ -153,9 +154,10 @@ function showAll() {
     document.querySelector("#pageTitle").textContent = "Home";
 }
 document.querySelector("#home").addEventListener("click", e => { e.preventDefault(); showAll(); });
-document.querySelector("#old".addEventListener("click"), (e) => { e.preventDefault(); filterOld(); })
-document.querySelector("#new".addEventListener("click"), (e) => { e.preventDefault(); filterNew(); })
-document.querySelector("#large".addEventListener("click"), (e) => { e.preventDefault(); filterLarge(); })
-document.querySelector("#small".addEventListener("click"), (e) => { e.preventDefault(); filterSmall(); })
+document.querySelector("#old").addEventListener("click", (e) => { e.preventDefault(); filterOld(); });
+document.querySelector("#new").addEventListener("click", (e) => { e.preventDefault(); filterNew(); });
+document.querySelector("#large").addEventListener("click", (e) => { e.preventDefault(); filterLarge(); });
+document.querySelector("#small").addEventListener("click", (e) => { e.preventDefault(); filterSmall(); });
+
 
 showAll();
