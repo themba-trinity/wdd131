@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cape Town Hotspots  and attractions | South Africa">
+    <meta name="author" content="Thembinkosi Gumbo">
+    <title> Discover Cape Town Hot Spots - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/capetown-hotspots.css">
+    <script src="scripts/capetown-hotspots.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">🌏</div>
+        <h1>Cape Town Hot Spots</h1>
+        <button id="menuButton" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav>
+            <ul>
+                <a href="index.html">Home</a>
+                <a href="discover.html">Events And Attractions</a>
+                <a href="food.html">Restaurants And Cafes</a>
+            </ul>
+            
+
+        </nav>
+
+    </header>
+
+    <section class="hero">
+        <h2>Welcome to Cape Town</h2>
+
+        <img src="images/south-african-flag.png" alt="South African Flag">
+        <p>From iconic hidden places, find your next adventure here.</p>
+        <p>Cape Town is a city that offers local culture with world class tourists attraction. From braais on the beach
+            to iconic sights like Table Mountain, Camps Bay beach and V&A Waterfront. local or visitor the city offers
+            must-see attractions.</p>
+    </section>
+
+    <main>
+        <section>
+            <h2>Choose your adventure</h2>
+            <p>Your guide to discover the best of the Mother city</p>
+            <div class="grid">
+                <div class="card">
+                    <h3>For Tourists</h3>
+                    <p>Top five must see attractions, tour and beaches</p>
+                    <ul>
+                        <li>Table Mountain</li>
+                        <li>Robben Island</li>
+                        <li>V&A Waterfront</li>
+                        <li>Camps Bay Beach</li>
+                        <li>Boulders Beach</li>
+                    </ul>
+
+                </div>
+                <div class="card">
+                    <h3>For Locals</h3>
+                    <p>Weekends markets, best coffee spots and events</p>
+                    <ul>
+                        <li>Old Biscuit Mill Market</li>
+                        <li>Neighbourgoods Market</li>
+                        <li>Oranjezicht City Farm Market</li>
+                        <li>Truth Coffee Roasting</li>
+                        <li>Kirstenbosch Summer Concerts</li>
+                    </ul>
+
+                </div>
+                <div>
+                    <h3>For Foodies</h3>
+                    <p>Best for sea food and affordable across the city</p>
+                    <ul>
+                        <li>Harbour House (Seafood)</li>
+                        <li>Codfather (Seafood Grill)</li>
+                        <li>Eastern Food Bazaar (Budget-friendly)</li>
+                        <li>Bo-Kaap Kombuis (Cape Malay cuisine)</li>
+                        <li>Mzoli’s Place (Braai experience)</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy <span id="currentyear"></span>🎵Thembinkosi Gumbo🎵 South Africa</p>
+        <p>Last Modified <span id="lastModified"></span></p>
+        <script>document.getElementById("lastModified").textContent = document.lastModified</script>
+    </footer>
+</body>
+
+</html>
