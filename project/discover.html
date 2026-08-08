@@ -81,6 +81,7 @@
         <section class="grid-section">
             <h2>Weekly Events</h2>
             <div class="grid">
+                
                 <div class="grid-card" data-category="Eat">
                     <h3>Oranjezicht Farm Market</h3>
                     <img src="images/oranjezich-farm-market.jpg" alt="Oranjezicht Farm Market" loading="lazy">
@@ -95,9 +96,10 @@
 
                 <div class="grid-card" data-category="Family">
                     <h3>Green Market Square</h3>
-                    <img src="images/green-market-square.webp" alt="Green Market Square" loading="lazy">
+                    <img src="images/green-market-square.jpg" alt="Green Market Square" loading="lazy">
                     <p>Handmade paintings and cultural arts available daily.</p>
                 </div>
+                
             </div>
         </section>
 
@@ -112,6 +114,24 @@
                 <input type="submit" value="Subscribe">
                 <p id="subscribeMessage"></p>
             </form>
+        </section>
+        <section>
+            <h2>Rate My Website</h2>
+            <div class="star-rating" id="starRating">
+                <span class="star" data-value="1">⭐</span>
+                <span class="star" data-value="2">⭐</span>
+                <span class="star" data-value="3">⭐</span>
+                <span class="star" data-value="4">⭐</span>
+                <span class="star" data-value="5">⭐</span>
+            </div>
+            <p>Your Rating: <span id="starRatingValue">0</span> / 5</p>
+            <form id="reviewForm">
+                <label for="reviewMessage">Right Your Message</label><br>
+                <textarea id="reviewMessage" name="reviewMessage" rows="4" placeholder="Share your feedback"></textarea><br>
+                <button type="submit">Submit Review</button>
+            
+            </form>
+            <p id="reviewResponse"></p>
         </section>
     </main>
 

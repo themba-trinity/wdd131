@@ -175,3 +175,32 @@ footer {
     padding: 1rem;
     margin-top: 2rem;
 }
+.star-rating {
+    font-size: 2rem;
+    color: #ddd;
+    cursor: pointer;
+}
+.star-rating .star-active {
+    color: gold;
+}
+#reviewForm textarea {
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#reviewForm button {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#reviewForm button:hover {
+    background: #fb8500;
+}

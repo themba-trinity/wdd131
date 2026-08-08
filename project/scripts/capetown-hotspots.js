@@ -11,6 +11,44 @@ document.addEventListener("DOMContentLoaded", () => {
         hamburgerBtn.classList.toggle("active");
     });
 });
+const starRating = document.getElementById("starRating");
+const starRatingValue = document.getElementById("starRatingValue");
+let selectedRating = 0;
+starRating.addEventListener("click", (e) => {
+    if (e.target.classList.contains("star")) {
+        selectedRating = e.target.dataset.value;
+        starRatingValue.textContent = selectedRating;
+        highlightStars(selectedRating);
+    }
+});
+
+function highlightStars(value) {
+    document.querySelectorAll(".star-rating .star").forEach((star, index) => {
+        star.classList.toggle("active", index < value);
+    });
+}
+
+const reviewForm = document.getElementById("reviewForm");
+const reviewResponse = document.getElementById("reviewResponse");
+
+reviewForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const reviewText = document.getElementById("reviewMessage").value;
+
+    if (selectedRating === 0) {
+        reviewResponse.textContent = "Please select a star rating before submitting.";
+        reviewResponse.style.color = "red";
+        return;
+    }
+
+    reviewResponse.textContent = `✅ Thank you! You rated ${selectedRating}/5 and wrote: "${reviewText}"`;
+    reviewResponse.style.color = "green";
+
+    reviewForm.reset();
+    document.querySelectorAll(".star-rating .star").forEach(s => s.classList.remove("active"));
+    selectedRating = 0;
+    starRatingValue.textContent = 0;
+});
 
 document.addEventListener("DOMContentLoaded", () => {
     const filterButtons = document.querySelectorAll("#filterButtons button");

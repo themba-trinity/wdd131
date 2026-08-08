@@ -38,20 +38,25 @@
     <section class="hero">
         <h2>Welcome to Cape Town</h2>
         <div class="hero-container">
-        <img src="images/south-african-flag.png" alt="South African Flag">
-        
-        <p class="hero-text">
-            Cape Town is a city that offers local culture with world class tourists attraction. From braais on the beach
-            to iconic sights like Table Mountain, Camps Bay beach and V&A Waterfront. local or visitor the city offers
-            must-see attractions.
-        </p>
-            </div>
             <p>From its iconic hidden places, find your next adventure here.</p>
+            <img src="images/south-african-flag.png" alt="South African Flag">
+
+            <p class="hero-text">
+                Cape Town is a city that offers local culture with world class tourists attraction. From braais on the
+                beach
+                to iconic sights like Table Mountain, Camps Bay beach and V&A Waterfront. local or visitor the city
+                offers
+                must-see attractions.
+            </p>
+        </div>
+
     </section>
 
     <main>
         <section>
             <h2>Choose your adventure</h2>
+
+
             <p>Your guide to discover the best of the Mother city</p>
             <div class="grid">
                 <div class="card">
@@ -91,6 +96,24 @@
                 </div>
 
             </div>
+        </section>
+        <section>
+            <h2>Rate My Website</h2>
+            <div class="star-rating" id="starRating">
+                <span class="star" data-value="1">⭐</span>
+                <span class="star" data-value="2">⭐</span>
+                <span class="star" data-value="3">⭐</span>
+                <span class="star" data-value="4">⭐</span>
+                <span class="star" data-value="5">⭐</span>
+            </div>
+            <p>Your Rating: <span id="starRatingValue">0</span> / 5</p>
+            <form id="reviewForm">
+                <label for="reviewMessage">Right Your Message</label><br>
+                <textarea id="reviewMessage" name="reviewMessage" rows="4" placeholder="Share your feedback"></textarea><br>
+                <button type="submit">Submit Review</button>
+            
+            </form>
+            <p id="reviewResponse"></p>
         </section>
     </main>
     <footer>
