@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cape Town Hotspots  and attractions | South Africa">
+    <meta name="description" content="Cape Town Hotspots and attractions | South Africa">
     <meta name="author" content="Thembinkosi Gumbo">
-    <title> Discover - Cape Town Hot spots</title>
+    <title>Discover - Cape Town Hot Spots</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400&display=swap"
@@ -19,112 +19,108 @@
     <header>
         <div class="logo">🌏</div>
         <h1>Cape Town Hot Spots</h1>
+        <button id="menuButton" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
         <nav>
             <ul>
-                <a href="index.html">Home</a>
-                <a href="discover.html">Attractions And Events</a>
-                <a href="food.html">Restaurants and Cafes</a>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Attractions And Events</a></li>
+                <li><a href="food.html">Restaurants and Cafes</a></li>
             </ul>
         </nav>
+
     </header>
-    
-        <section class="hero">
-            <h2>Discover Cape Town</h2>
-            <img src="images/south-african-flag.png" alt="South African Flag">
-            
-            <p>Top places to visit and things happening every week in the Mother city</p>
-        </section>
-    
+
+    <section class="hero">
+        <h2>Discover Cape Town</h2>
+        <img src="images/south-african-flag.png" alt="South African Flag">
+        <p>Top places to visit and things happening every week in the Mother City</p>
+    </section>
+
     <main>
         <section id="hotspots">
             <h2>Explore Hotspots</h2>
             <div id="filterButtons">
                 <button data-filter="all" class="active">All</button>
-                <button data-filter="Family">family</button>
+                <button data-filter="Family">Family</button>
                 <button data-filter="Solo">Solo</button>
                 <button data-filter="Eat">Eat</button>
                 <button data-filter="Play">Play</button>
-
             </div>
-
         </section>
-        <section id="attractions">
+        <section class="grid-section">
             <h2>Top Attractions</h2>
             <div class="grid">
-                <div class="card">
+                <div class="grid-card" data-category="Family">
                     <h3>Table Mountain</h3>
                     <img src="images/table-mountain.jpg" alt="Table Mountain" loading="lazy">
-                    
-                    <p>Hike Table Mountain and enjoy the view of the Mother city and the pacific ocean around it.</p>
+                    <p>Hike Table Mountain and enjoy the view of the Mother City and the ocean.</p>
                 </div>
-                <div class="card">
+
+                <div class="grid-card" data-category="Eat">
                     <h3>V&A Waterfront</h3>
                     <img src="images/waterfront.jpg" alt="V&A Waterfront" loading="lazy">
-                    
-                    <p>Shopping, harbor views and food and it's perfect for families</p>
-
+                    <p>Shopping, harbor views, and food — perfect for families.</p>
                 </div>
-                <div class="card">
-                    <h3>Boulder's Beach</h3>
-                    <img src="images/bouldes-beach-penguins.webp" alt="Boulders beach" loading="lazy">
-                    
-                    <p>Visit and see African Penguins at the Boulders beach and swim in the calm and warm water</p>
 
+                <div class="grid-card" data-category="Play">
+                    <h3>Boulders Beach</h3>
+                    <img src="images/bouldes-beach-penguins.webp" alt="Boulders Beach" loading="lazy">
+                    <p>See African Penguins and swim in calm waters.</p>
                 </div>
-                <div class="card">
+
+                <div class="grid-card" data-category="Solo">
                     <h3>Robben Island</h3>
-                    <img src="images/rubben-island.jpg" alt="Robben Island">
-                    
-                    <p>Robben Island is a unique symbol of the Country's History</p>
-
+                    <img src="images/rubben-island.jpg" alt="Robben Island" loading="lazy">
+                    <p>A unique symbol of South Africa’s history.</p>
                 </div>
             </div>
         </section>
-        <section id="events">
-            <h3>Weekly Events</h3>
+
+        <section class="grid-section">
+            <h2>Weekly Events</h2>
             <div class="grid">
-                <div class="card">
+                <div class="grid-card" data-category="Eat">
                     <h3>Oranjezicht Farm Market</h3>
-                    <img src="images/oranjezich-farm-market.jpg" alt="Oranjezicht farm Market">
-                    
-                    <p>local produce, food stalls and live music every wednesday, Saturday and Sunday.</p>
-
+                    <img src="images/oranjezich-farm-market.jpg" alt="Oranjezicht Farm Market" loading="lazy">
+                    <p>Local produce, food stalls, and live music every Wednesday, Saturday, and Sunday.</p>
                 </div>
-                <div class="card">
+
+                <div class="grid-card" data-category="Play">
                     <h3>First Thursdays</h3>
-                    <img src="images/first-thursday.jpg" alt="First Thursday night">
-                    <p>Every first Thursday of the month all art galleries open till late with foods trucks and drinks
-                        on the special price in the city Bowl.</p>
-
-                </div>
-                <div class="card">
-                    <h3>Green Market square</h3>
-                    <img src="images/green-market-square.webp" alt="Green Market square ">
-                    <p>Paintings and culture arts made by hand found in the market from Monday to Sunday.</p>
-
+                    <img src="images/first-thursday.jpg" alt="First Thursday Night" loading="lazy">
+                    <p>Art galleries open late with food trucks and drinks every first Thursday of the month.</p>
                 </div>
 
+                <div class="grid-card" data-category="Family">
+                    <h3>Green Market Square</h3>
+                    <img src="images/green-market-square.webp" alt="Green Market Square" loading="lazy">
+                    <p>Handmade paintings and cultural arts available daily.</p>
+                </div>
             </div>
-
         </section>
+
+    
         <section id="newsLetter">
             <h2>Get Weekly Events News</h2>
             <form id="newsletterForm">
                 <div class="form">
-                    <label for="newsLetterEmail">Email Address <span class="required"></span></label>
-                    <input type="email" id="newsLetterEmail" name="email" placeholder="yourEmail" required>
-
+                    <label for="newsLetterEmail">Email Address <span class="required">*</span></label>
+                    <input type="email" id="newsLetterEmail" name="email" placeholder="yourEmail@example.com" required>
                 </div>
-                <input type="submit" value="subscribe">
+                <input type="submit" value="Subscribe">
                 <p id="subscribeMessage"></p>
-
             </form>
         </section>
     </main>
+
     <footer>
-        <p>&copy <span id="currentyear"></span>🎵Thembinkosi Gumbo🎵 South Africa</p>
+        <p>&copy; <span id="currentyear"></span> 🎵Thembinkosi Gumbo🎵 South Africa</p>
         <p>Last Modified <span id="lastModified"></span></p>
-        <script>document.getElementById("lastModified").textContent = document.lastModified</script>
+        <script>
+            document.getElementById("lastModified").textContent = document.lastModified;
+        </script>
     </footer>
 </body>
 
