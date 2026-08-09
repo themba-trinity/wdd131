@@ -58,6 +58,15 @@ nav a {
     padding: 0.5rem 1rem;
     font-weight: 600;
 }
+#filterButtons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+#filterButtons button {
+    padding: 8px 16px;
+    cursor: pointer;
+}
 
 nav a:hover {
     color: var(--secondary-color);
